@@ -4,7 +4,7 @@ Created on Sat Dec  8 02:30:44 2018
 
 @author: Aric
 """
-def encode_64(phone):
+def encode_62(phone):
     table = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     mylist = []
     while phone != 0:
@@ -14,7 +14,7 @@ def encode_64(phone):
     return ''.join(mylist)
 
 
-def decode_64(mycode):
+def decode_62(mycode):
     table = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     table_values = [i for i in range(len(table))]
     table = list(table)
